@@ -15,7 +15,7 @@
 
 body {
     /* royalty free image from pexels.com */
-    background-image: url('../images/sky-bg.jpg');
+    background-image: url('https://wallpaperaccess.com/full/697283.jpg');
     background-size: cover;
     background-attachment: fixed;
     font-family: Helvetica, Arial, sans-serif;
@@ -66,3 +66,80 @@ main, label, h2, h3, #humidity, #wind, #today-description, .uvi {
     background-color: var(--blue80);
 }
 
+
+ul, .btn, btn:hover {
+    border: none;
+    font-size: 1em;
+}
+
+.btn:hover {
+    background-color: var(--yellow);
+    transition: all 0.3s ease-in-out;
+}
+
+.list-group-item, #search {
+    background-color: var(--yellow);
+}
+
+.list-group-item:hover, #search:hover {
+    background-color: ivory;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.uvi-good {
+    background-color: var(--blue);
+    border: 1px solid var(--ivory);
+    border-radius: 5px;
+}
+
+
+.uvi-moderate {
+    background-color: var(--yellow);
+    border: 1px solid var(--ivory);
+    border-radius: 5px;
+}
+
+.uvi-severe {
+    background-color: var(--red);
+    border: 1px solid var(--ivory);
+    border-radius: 5px;
+}
+
+i {
+    font-size: 2em;
+}
+
+#today-icon i {
+    color: var(--ivory);
+    font-size: 4em;
+}
+
+#temp {
+    color: var(--ivory);
+    font-size: 6em;
+}
+
+#clear {
+    max-height: max-content;
+}
+
+/* media queries */
+/* font sizes for small screens */
+@media only screen and (max-width: 575px) {
+    h1 {
+        font-size: 48px;
+    }
+    h2, h3 {
+        font-size: 20px;
+    }
+    #temp {
+        font-size: 4em;
+    }
+    #today-icon i {
+    font-size: 2rem;
+    }
+    .list-group-item {
+        border-radius: 3px !important;
+    }
+}

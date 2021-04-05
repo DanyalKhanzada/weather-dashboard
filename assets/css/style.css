@@ -65,5 +65,3 @@ main, label, h2, h3, #humidity, #wind, #today-description, .uvi {
     color: var(--darkBlue);
     background-color: var(--blue80);
 }
-
-

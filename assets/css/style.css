@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root  {
+    --blue: #607890;
+    --blue80: rgba(96, 120, 144, 0.8);
+    --yellow: #efd280;
+    --darkBlue: #403f4c;
+    --ivory: #fefefe;
+    --red: #de6449;
+}
+
+body {
+    /* royalty free image from pexels.com */
+    background-image: url('../images/sky-bg.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: var(--darkBlue);
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: var(--yellow);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    font-size: 64px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h4 {
+    color: var(--darkBlue);
+}
+
+menu {
+    background: var(--blue80);
+}
+
+
+main, label, h2, h3, #humidity, #wind, #today-description, .uvi {
+    color: var(--ivory) !important;
+}
+
+.today {
+    background: var(--blue80);
+    color: var(--ivory);
+    max-width: 575px;
+}
+
+.card {
+    color: var(--darkBlue);
+    background-color: var(--blue80);
+}

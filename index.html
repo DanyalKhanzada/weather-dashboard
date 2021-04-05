@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css"
+        integrity="sha512-UyNhw5RNpQaCai2EdC+Js0QL4RlVmiq41DkmCJsRV3ZxipG2L0HhTqIf/H9Hp8ez2EnFlkBnjRGJU2stW3Lj+w=="
+        crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bungee+Shade&family=Hammersmith+One&family=Righteous&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/715d22d8c7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>☀ Weather</title>
+</head>
+
+
+<body>
+    <header class="p-3 m-0">
+        <h1 class="mx-sm-auto">Weather Dashboard</h1>
+    </header>
+
+    <div class="container-fluid">
+        <div class="row mt-2">
+
+            <menu class="col-sm-2 mr-3 col-12 p-2 rounded d-flex flex-column">
+
+                <div class="d-flex flex-column align-content-center">
+                <label for="city-name" class="font-italic mb-1">Search for a city</label>
+                <form class="d-flex flex-row">
+                    <input type="text" class="mr-1 mb-3 w-75" id="city-name">
+                    <button class="btn btn-light mb-3 w-25 b-0 d-flex align-items-center justify-content-center" type="search" id="search">
+                        <span class="oi oi-magnifying-glass"></span>
+                    </button>
+                </form>
+
+                <button class="btn btn-light mb-1 algin-self-start" id="clear">Clear search history</button>
+                </div>
+
+                <ul class="d-flex flex-row flex-sm-column p-1" id="search-history">
+                </ul>
+
+            </menu>
+            <main class="col p-2">
+                <div class="today-group d-none">
+                    <div class="today card rounded-3">
+
+                            <div class="card-header d-flex flex-row align-items-baseline align-content-center justify-content-between">
+                                <h2 id="city"></h2>
+                                <h3 class="font-italic" id="todays-date"></h3>
+                            </div>
+
+                            <div class="d-flex flex-row align-items-center ml-md-5 mx-auto">
+
+                                <p class="font-weight-bold" id="temp"></p>
+
+                                <div class="text-left ml-4">
+                                    <div id="today-icon"></div>
+                                    <p class="font-italic" id="today-description"></p>
+                                </div>
+
+                            </div>
+                            <div class="card-footer d-flex flex-row justify-content-between">
+
+                                <p class="m-0" id="humidity"></p>
+                                <p class="m-0" id="wind"></p>
+                                <p class="uvi m-0">UVI <span class="px-2 py-1 ml-2" id="uv"></span></p>
+                            </div>
+
+                    </div>
+                </div>
+
+                        
+
+</body>
